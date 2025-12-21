@@ -199,6 +199,12 @@ Analyzing the principles of AI technology to explore its potential applications 
 
 ## Market & Policy Research
 
+### Game Industry Trends
+
+Tracking global gaming market dynamics, platform shifts, and emerging business models to understand the intersection of interactive entertainment with content ecosystems.
+
+[Link to Database](https://www.notion.so/KOCCA-Game-Ind-trends-efb789c52b0048bfbdeb1671bb61a761?pvs=21)
+
 ### Content Industry Trends (N contents)
 
 Synthesizing insights across various content sectors to grasp macroscopic trends.

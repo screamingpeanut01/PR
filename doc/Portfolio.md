@@ -167,6 +167,12 @@ AI 기술이 시대의 분기점이 된 현재 AI 기술의 트렌드와 그 원
 
 ## Market & Policy Research
 
+### Game Industry Trends
+
+글로벌 게임 시장의 트렌드, 플랫폼 변화, 신규 비즈니스 모델을 추적하여 인터랙티브 엔터테인먼트와 콘텐츠 생태계의 접점을 이해
+
+[https://www.notion.so/KOCCA-Game-Ind-trends-efb789c52b0048bfbdeb1671bb61a761?source=copy_link](https://www.notion.so/KOCCA-Game-Ind-trends-efb789c52b0048bfbdeb1671bb61a761?pvs=21)
+
 ### N contents
 
 콘텐츠 산업 전반의 이슈와 트렌드 정리. 다양한 콘텐츠 산업 분야의 인사이트를 종합하여 거시적 트렌드 파악
