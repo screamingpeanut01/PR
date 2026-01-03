@@ -143,6 +143,22 @@
 
 [https://drive.google.com/file/d/1ROYnh8smGm24yXtKbXKIo01MqYevpuFV/view](https://drive.google.com/file/d/1ROYnh8smGm24yXtKbXKIo01MqYevpuFV/view)
 
+### **학회 산학협력 프로젝트: 앱 마케팅 캠페인 (2025)**
+
+학회에서 스타트업 산학협력 프로젝트를 수행하며, 리텐션, CAC, CPI 등 앱 지표를 활용해 Multi-Armed Bandit(MAB) 방식의 마케팅 캠페인을 기획 및 약 2개월간 실행
+
+- **Role:** 마케팅 전략 기획 및 데이터 분석
+    - **MAB 알고리즘**을 활용한 실시간 예산 배분 최적화 기반의 데이터 기반 마케팅 캠페인 설계 및 실행
+    - 핵심 앱 지표(Retention, CAC, CPI)를 분석하여 약 **2개월간** 타겟팅 및 크리에이티브 전략을 지속적으로 개선
+- **Key Result:**
+    - 🎯 **2,000+ 앱 설치** 달성
+    - 🎯 **CPI(설치당 비용) 500원** 달성
+- Key Takeaways :
+    - **[MAB 기반 퍼포먼스 마케팅]** Multi-Armed Bandit 알고리즘을 활용하여 마케팅 예산을 동적으로 배분하고, 실시간 실험을 통해 ROI를 극대화하는 실무 경험 확보
+    - **[지표 기반 캠페인 최적화]** 앱 분석 지표(Retention, CAC, CPI)를 활용한 지속적인 캠페인 최적화 역량을 개발하여, 데이터 사이언스와 마케팅 실행을 연결
+
+*비고: NDA로 인해 상세 자료는 공개 불가*
+
 ---
 
 # Industry Intelligence & Trend Archive (2023 ~ )

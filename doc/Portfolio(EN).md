@@ -175,6 +175,28 @@ Commercialized an affordable (600k KRW) braille device to replace expensive (5m 
 
 [https://drive.google.com/file/d/1ROYnh8smGm24yXtKbXKIo01MqYevpuFV/view](https://drive.google.com/file/d/1ROYnh8smGm24yXtKbXKIo01MqYevpuFV/view)
 
+### **Industry-Academia Startup Collaboration: App Marketing Campaign (2025)**
+
+**Description:**
+Collaborated with an academic society on a startup industry-academia project, planning and executing a Multi-Armed Bandit (MAB) based marketing campaign utilizing app metrics such as Retention, CAC, and CPI to optimize user acquisition.
+
+**Role: Marketing Strategist & Data Analyst**
+
+- Designed and executed a data-driven marketing campaign using **MAB algorithms** for real-time budget allocation optimization.
+- Analyzed core app metrics (Retention, CAC, CPI) to continuously refine targeting and creative strategies over a **2-month period**.
+
+**Key Result:**
+
+- 🎯 **2,000+ App Installs**
+- 🎯 **₩500 CPI** (Cost Per Install) achieved
+
+**Key Takeaways:**
+
+- **[Performance Marketing with MAB]** Acquired hands-on experience in applying Multi-Armed Bandit algorithms to dynamically allocate marketing budgets, maximizing ROI through real-time experimentation.
+- **[Metric-Driven Optimization]** Developed the capability to leverage app analytics (Retention, CAC, CPI) for continuous campaign optimization, bridging data science with marketing execution.
+
+*Note: Detailed materials are confidential due to NDA.*
+
 ---
 
 # Industry Intelligence & Trend Archive (2023 ~ )
