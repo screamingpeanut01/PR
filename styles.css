@@ -1,32 +1,24 @@
 /* ========================================
-   Professional Portfolio Stylesheet
-   Color Palette: Classic Business Navy
+   BRUTALIST PORTFOLIO STYLESHEET
+   Raw. Bold. Uncompromising.
    ======================================== */
 
 /* CSS Reset & Variables */
 :root {
-    --primary: #1a365d;
-    --primary-light: #2c5282;
-    --secondary: #2d3748;
-    --accent: #2b6cb0;
-    --accent-hover: #3182ce;
-    --background: #f7fafc;
-    --surface: #ffffff;
-    --text-primary: #2d3748;
-    --text-secondary: #4a5568;
-    --text-muted: #718096;
-    --border: #e2e8f0;
-    --shadow: rgba(26, 54, 93, 0.08);
-    --shadow-hover: rgba(26, 54, 93, 0.15);
+    --black: #000000;
+    --white: #ffffff;
+    --accent: #ff3300;
+    --accent-alt: #0066ff;
+    --yellow: #ffff00;
+    --gray: #888888;
+    --light-gray: #e0e0e0;
 
-    --font-heading: 'Lora', Georgia, serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', 'Consolas', 'Monaco', monospace;
+    --font-display: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
-
-    --transition: all 0.3s ease;
+    --border-thick: 4px solid var(--black);
+    --border-thin: 2px solid var(--black);
+    --transition: all 0.15s ease;
 }
 
 * {
@@ -41,83 +33,91 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
-    background-color: var(--background);
-    color: var(--text-primary);
-    line-height: 1.7;
+    font-family: var(--font-mono);
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
 }
 
-/* Typography */
+/* Selection */
+::selection {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+/* Typography - Brutalist Style */
 h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-heading);
-    color: var(--primary);
-    font-weight: 600;
-    line-height: 1.3;
+    font-family: var(--font-display);
+    color: var(--black);
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     position: relative;
-    padding-bottom: 0.75rem;
+    display: inline-block;
 }
 
 h2::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--primary-light));
-    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: var(--black);
 }
 
 h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: var(--secondary);
 }
 
 p {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    color: var(--black);
+    font-size: 0.875rem;
 }
 
 a {
-    color: var(--accent);
-    text-decoration: none;
+    color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--accent-hover);
+    background: var(--yellow);
+    text-decoration: none;
 }
 
 /* Layout */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Header */
+/* Header - Brutalist */
 .header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-    color: white;
+    background: var(--black);
+    color: var(--white);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px var(--shadow);
+    border-bottom: var(--border-thick);
 }
 
 .header-content {
@@ -127,108 +127,143 @@ a:hover {
 }
 
 .header-info h1 {
-    color: white;
-    font-size: 2.25rem;
-    margin-bottom: 0;
+    color: var(--white);
+    font-size: 2rem;
+    letter-spacing: -0.03em;
 }
 
 .header-info p {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.875rem;
+    color: var(--gray);
+    font-size: 0.75rem;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .lang-toggle {
     display: flex;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.25rem;
-    border-radius: var(--radius-md);
+    gap: 0;
+    border: 2px solid var(--white);
 }
 
 .lang-btn {
     padding: 0.5rem 1rem;
     border: none;
     background: transparent;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: var(--font-body);
-    font-size: 0.875rem;
-    font-weight: 500;
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
     cursor: pointer;
-    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     transition: var(--transition);
 }
 
 .lang-btn:hover {
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--accent);
+    color: var(--white);
 }
 
 .lang-btn.active {
-    background: white;
-    color: var(--primary);
+    background: var(--white);
+    color: var(--black);
 }
 
-/* Hero Section */
+.lang-btn:first-child {
+    border-right: 2px solid var(--white);
+}
+
+/* Hero Section - Brutalist */
 .hero {
-    padding: 4rem 0;
-    text-align: center;
-    background: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
-    border-bottom: 1px solid var(--border);
+    padding: 6rem 0;
+    text-align: left;
+    background: var(--white);
+    border-bottom: var(--border-thick);
 }
 
 .hero h2 {
-    display: inline-block;
+    display: block;
+    font-size: 4rem;
+    line-height: 0.95;
+    margin-bottom: 2rem;
 }
 
 .hero h2::after {
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
 }
 
 .hero-description {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.125rem;
-    color: var(--text-secondary);
+    max-width: 800px;
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.7;
+    border-left: var(--border-thick);
+    padding-left: 1.5rem;
+    margin-left: 0;
 }
 
-/* Section */
+/* Section - Brutalist */
 .section {
     padding: 4rem 0;
+    border-bottom: var(--border-thick);
 }
 
 .section:nth-child(even) {
-    background-color: var(--surface);
+    background-color: var(--light-gray);
 }
 
 .section-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-/* Project Grid */
+.section-header h2::before {
+    content: '→';
+    margin-right: 0.75rem;
+    color: var(--accent);
+}
+
+/* Project Grid - Brutalist */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0;
 }
 
-/* Project Card */
+/* Project Card - Brutalist */
 .project-card {
-    background: var(--surface);
-    border-radius: var(--radius-lg);
+    background: var(--white);
     padding: 2rem;
-    box-shadow: 0 4px 6px var(--shadow);
-    border: 1px solid var(--border);
+    border: var(--border-thick);
+    margin: -2px;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--black);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px var(--shadow-hover);
-    border-color: var(--accent);
+    background: var(--yellow);
 }
 
 .project-header {
@@ -241,49 +276,60 @@ a:hover {
 
 .project-title {
     font-size: 1.125rem;
-    color: var(--primary);
+    color: var(--black);
     flex: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
 }
 
 .project-year {
     font-size: 0.875rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    white-space: nowrap;
+    color: var(--black);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    padding: 0.25rem 0.5rem;
+    border: var(--border-thin);
+    background: var(--white);
 }
 
 .project-award {
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    background: linear-gradient(135deg, #f6e05e 0%, #ecc94b 100%);
-    color: #744210;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.375rem 0.75rem;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
 }
 
 .project-description {
-    font-size: 0.9375rem;
-    color: var(--text-secondary);
-    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
 .project-role {
     margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--light-gray);
+    border: var(--border-thin);
 }
 
 .project-role-title {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--black);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-mono);
 }
 
 .project-role-list {
@@ -293,111 +339,127 @@ a:hover {
 
 .project-role-list li {
     position: relative;
-    padding-left: 1rem;
-    margin-bottom: 0.375rem;
-    font-size: 0.875rem;
-    color: var(--text-secondary);
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--black);
 }
 
 .project-role-list li::before {
-    content: '•';
+    content: '//';
     position: absolute;
     left: 0;
     color: var(--accent);
     font-weight: bold;
+    font-family: var(--font-mono);
 }
 
 .project-takeaways {
     margin-top: auto;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    border-top: var(--border-thin);
 }
 
 .takeaway-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .takeaway-tag {
     display: inline-block;
-    background: rgba(43, 108, 176, 0.1);
-    color: var(--accent);
-    padding: 0.125rem 0.5rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-right: 0.5rem;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
+    margin-bottom: 0.5rem;
 }
 
 .takeaway-text {
     font-size: 0.8125rem;
-    color: var(--text-muted);
+    color: var(--black);
     display: block;
-    margin-top: 0.25rem;
+    line-height: 1.5;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 1.25rem;
-    padding: 0.625rem 1.25rem;
-    background: var(--primary);
-    color: white;
-    border-radius: var(--radius-md);
-    font-size: 0.875rem;
-    font-weight: 500;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
     transition: var(--transition);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-mono);
+    border: var(--border-thin);
 }
 
 .project-link:hover {
-    background: var(--primary-light);
-    color: white;
-    transform: translateX(4px);
+    background: var(--accent);
+    color: var(--white);
+    transform: translate(4px, -4px);
+    box-shadow: -4px 4px 0 var(--black);
 }
 
 .project-link svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
-/* Archive Section */
+/* Archive Section - Brutalist */
 .archive-section {
-    background-color: var(--surface);
+    background-color: var(--white);
 }
 
 .archive-intro {
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: var(--black);
     max-width: 900px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     line-height: 1.7;
+    border-left: var(--border-thick);
+    padding-left: 1.5rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border: var(--border-thick);
 }
 
 .archive-category {
-    margin-bottom: 2.5rem;
-    padding: 1.5rem;
-    background: var(--background);
-    border-radius: var(--radius-lg);
-    border-left: 4px solid var(--accent);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--white);
+    border: var(--border-thick);
+    border-left: 8px solid var(--accent);
 }
 
 .archive-category-title {
-    font-size: 1.25rem;
-    color: var(--primary);
-    margin-bottom: 1.25rem;
-    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
 }
 
 .archive-category-desc {
-    font-size: 0.9375rem;
-    color: var(--text-muted);
-    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--border-thin);
 }
 
 .archive-item {
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 2px solid var(--border);
+    padding-left: 1.5rem;
+    border-left: var(--border-thin);
 }
 
 .archive-item:last-child {
@@ -406,48 +468,51 @@ a:hover {
 
 .archive-item-title {
     font-size: 1rem;
-    color: var(--secondary);
-    margin-bottom: 0.375rem;
-    font-family: var(--font-body);
-    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .archive-item-desc {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-    margin-bottom: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--black);
+    margin-bottom: 1rem;
     line-height: 1.6;
 }
 
 .archive-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .archive-link {
     display: inline-flex;
     align-items: center;
-    padding: 0.375rem 0.875rem;
-    background: var(--primary);
-    color: white;
-    border-radius: var(--radius-sm);
-    font-size: 0.8125rem;
-    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
     transition: var(--transition);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
 }
 
 .archive-link:hover {
-    background: var(--primary-light);
-    color: white;
+    background: var(--accent);
+    color: var(--white);
 }
 
 .case-study {
     margin-bottom: 1rem;
-    padding: 0.75rem 1rem;
-    background: var(--surface);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    background: var(--light-gray);
+    border: var(--border-thin);
 }
 
 .case-study:last-child {
@@ -455,51 +520,62 @@ a:hover {
 }
 
 .case-study-title {
-    font-size: 0.9375rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--black);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
-/* Footer */
+/* Footer - Brutalist */
 .footer {
-    background: var(--primary);
-    color: white;
-    padding: 3rem 0;
-    text-align: center;
+    background: var(--black);
+    color: var(--white);
+    padding: 4rem 0;
+    border-top: 8px solid var(--accent);
 }
 
 .footer-content {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .footer h3 {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .footer-contact {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .footer-contact a {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.9375rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--white);
+    transition: var(--transition);
 }
 
 .footer-contact a:hover {
-    color: white;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
 }
 
 .footer-copyright {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.8125rem;
+    color: var(--gray);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 /* Responsive Design */
@@ -509,7 +585,7 @@ a:hover {
     }
 
     .container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
     }
 
     .header-content {
@@ -522,12 +598,12 @@ a:hover {
         font-size: 2rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    .hero h2 {
+        font-size: 2.5rem;
     }
 
     .hero {
-        padding: 2.5rem 0;
+        padding: 3rem 0;
     }
 
     .section {
@@ -536,11 +612,11 @@ a:hover {
 
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
     }
 
     .project-card {
-        padding: 1.5rem;
+        margin: 0;
+        margin-bottom: -4px;
     }
 
     .project-header {
@@ -550,19 +626,27 @@ a:hover {
 
     .footer-contact {
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 1rem;
+    }
+
+    .footer-contact a {
+        display: block;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .lang-toggle {
         width: 100%;
-        justify-content: center;
     }
 
     .lang-btn {
         flex: 1;
         text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -570,7 +654,7 @@ a:hover {
 @media print {
     .header {
         position: static;
-        background: var(--primary);
+        background: var(--black);
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
@@ -578,10 +662,66 @@ a:hover {
     .project-card {
         break-inside: avoid;
         box-shadow: none;
-        border: 1px solid var(--border);
     }
 
     .lang-toggle {
         display: none;
     }
+
+    .project-card:hover {
+        background: var(--white);
+    }
+
+    .project-card:hover::before {
+        display: none;
+    }
+}
+
+/* Brutalist Accent Animations */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.header-info h1:hover {
+    animation: glitch 0.3s ease;
+}
+
+/* Custom Scrollbar - Brutalist */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-left: var(--border-thin);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
