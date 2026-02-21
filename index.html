@@ -1013,6 +1013,97 @@
                     </p>
                 </article>
 
+                <!-- Project: AI News Archiving Pipeline -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title"
+                            data-en="AI-Driven News Archiving Pipeline"
+                            data-ko="AI 기반 뉴스 자동 아카이빙 파이프라인">
+                            AI-Driven News Archiving Pipeline
+                        </h3>
+                        <span class="project-year">2025</span>
+                    </div>
+
+                    <p class="project-description"
+                        data-en="An end-to-end automated pipeline that transforms web bookmarks into a structured intelligence database. Leverages LLM-based content analysis to extract, cleanse, and classify content industry & IT trend articles — from Raindrop.io ingestion through to Notion database load."
+                        data-ko="웹 북마크 저장 시점부터 데이터베이스 적재까지의 전 과정을 자동화한 인텔리전스 파이프라인. Raindrop.io 트리거부터 Notion 적재까지, LLM 기반 콘텐츠 분석을 통해 콘텐츠 산업·IT 트렌드 기사를 자동 정제 및 분류.">
+                        An end-to-end automated pipeline that transforms web bookmarks into a structured intelligence
+                        database. Leverages LLM-based content analysis to extract, cleanse, and classify content
+                        industry &amp; IT trend articles — from Raindrop.io ingestion through to Notion database load.
+                    </p>
+
+                    <!-- Pipeline Visualization -->
+                    <div class="pipeline-viz" aria-label="Pipeline architecture diagram">
+                        <div class="pipeline-step">
+                            <div class="pipeline-node">RAIN<br>DROP<br>.IO</div>
+                            <span class="pipeline-node-label">Raindrop.io</span>
+                            <span class="pipeline-node-sub">Watch<br>Bookmarks</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-node">JINA<br>HTTP</div>
+                            <span class="pipeline-node-label">Jina Reader</span>
+                            <span class="pipeline-node-sub">Extract<br>Markdown</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-node highlight">GEMINI<br>3<br>FLASH</div>
+                            <span class="pipeline-node-label">Gemini AI</span>
+                            <span class="pipeline-node-sub">AI Analysis<br>& Summary</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-node">JSON<br>{ }</div>
+                            <span class="pipeline-node-label">JSON Parser</span>
+                            <span class="pipeline-node-sub">Structured<br>Output</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="pipeline-node">NOTION<br>API</div>
+                            <span class="pipeline-node-label">Notion API</span>
+                            <span class="pipeline-node-sub">DB Create +<br>Page Append</span>
+                        </div>
+                    </div>
+
+                    <div class="project-role">
+                        <p class="project-role-title"
+                            data-en="Role: Pipeline Architect & Prompt Engineer"
+                            data-ko="역할: 파이프라인 설계 및 프롬프트 엔지니어링">Role: Pipeline Architect &amp; Prompt Engineer</p>
+                        <ul class="project-role-list">
+                            <li data-en="Built an automated ingestion flow: Raindrop.io → Jina Reader API (noise-free Markdown extraction) → Gemini 3 Flash → Notion API, orchestrated via Make."
+                                data-ko="Raindrop.io → Jina Reader API(노이즈 제거 후 Markdown 추출) → Gemini 3 Flash → Notion API로 이어지는 자동화 수집 플로우를 Make로 구성">
+                                Built an automated ingestion flow: Raindrop.io → Jina Reader API → Gemini 3 Flash →
+                                Notion API, orchestrated via Make.
+                            </li>
+                            <li data-en="Designed prompt engineering rules (8 persona constraints) enforcing a strict JSON Schema output — Title, Date, Summary, Tags, Type — to ensure pipeline stability."
+                                data-ko="8가지 페르소나 규칙을 적용한 프롬프트 엔지니어링으로 제목·날짜·요약·태그·유형을 JSON Schema로 강제 출력하여 파이프라인 안정성 확보">
+                                Designed prompt engineering rules (8 persona constraints) enforcing a strict JSON
+                                Schema output — Title, Date, Summary, Tags, Type.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-takeaways">
+                        <div class="takeaway-item">
+                            <span class="takeaway-tag" data-en="LLM Pipeline Engineering"
+                                data-ko="LLM 파이프라인 엔지니어링">LLM Pipeline Engineering</span>
+                            <span class="takeaway-text"
+                                data-en="Demonstrated the ability to design a stable data pipeline by enforcing structured output from an LLM — converting unstructured web content into queryable, consistent database records."
+                                data-ko="LLM의 비정형 출력을 JSON Schema로 강제하여 웹 콘텐츠를 쿼리 가능한 정형 데이터로 변환, 안정적인 데이터 파이프라인 설계 역량 입증.">Demonstrated
+                                the ability to design a stable data pipeline by enforcing structured output from an
+                                LLM — converting unstructured web content into consistent database records.</span>
+                        </div>
+                        <div class="takeaway-item">
+                            <span class="takeaway-tag" data-en="Structured Output Design"
+                                data-ko="구조화된 출력 설계">Structured Output Design</span>
+                            <span class="takeaway-text"
+                                data-en="Applied fine-grained formatting rules at the prompt level (italics for names, brackets for titles) to maintain archive consistency — proving that prompt engineering can replace manual curation."
+                                data-ko="인명 이탤릭체, 작품명 괄호 표기 등 세밀한 서식 규칙을 프롬프트 레벨에서 통제하여 아카이브 일관성 유지, 수동 큐레이션을 대체하는 프롬프트 엔지니어링 역량 확보.">Applied
+                                fine-grained formatting rules at the prompt level to maintain archive consistency —
+                                proving that prompt engineering can replace manual curation.</span>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Project: STO Research -->
                 <article class="project-card">
                     <div class="project-header">
@@ -1104,19 +1195,20 @@
                 <div class="archive-item">
                     <h4 class="archive-item-title" data-en="News Archives" data-ko="News Archives">News Archives</h4>
                     <p class="archive-item-desc"
-                        data-en="Daily monitoring of major global media and platforms to create a timeline of key industry issues."
-                        data-ko="주요 글로벌 매체 및 플랫폼 뉴스를 데일리 모니터링하여 시기별 핵심 이슈를 타임라인으로 정리">
+                        data-en="Daily monitoring of major global media and platforms to create a timeline of key industry issues. Fully automated via an AI pipeline (Raindrop.io → Gemini 3 Flash → Notion) — articles are ingested, AI-summarized, and tagged without manual intervention."
+                        data-ko="주요 글로벌 매체 및 플랫폼 뉴스를 데일리 모니터링하여 시기별 핵심 이슈를 타임라인으로 정리. AI 기반 자동화 파이프라인(Raindrop.io → Gemini 3 Flash → Notion) 구축으로 기사 수집·요약·태깅을 수동 개입 없이 처리.">
                         Daily monitoring of major global media and platforms to create a timeline of key industry
-                        issues.
+                        issues. Fully automated via an AI pipeline (Raindrop.io → Gemini 3 Flash → Notion) — articles
+                        are ingested, AI-summarized, and tagged without manual intervention.
                     </p>
                     <div class="archive-links">
                         <a href="https://www.notion.so/News-Studies-2c9ad2e358948039b671ea5f75239aca?pvs=21"
                             target="_blank" class="archive-link">
                             <span data-en="Link to Database" data-ko="데이터베이스 링크">Link to Database</span>
                         </a>
-                        <a href="https://www.notion.so/Tech-trends-38c8ef795607417f9038d49e7132c731?pvs=21"
+                        <a href="https://www.notion.so/News-studies-2026-JAN-2f7ad2e3589480499510fefdae07f756?source=copy_link"
                             target="_blank" class="archive-link">
-                            <span data-en="Link to Database" data-ko="데이터베이스 링크">Link to Database</span>
+                            <span data-en="Automated Database Link (2026.02~)" data-ko="자동화 데이터베이스 링크 (2026.02~)">자동화 데이터베이스 링크 (2026.02~)</span>
                         </a>
                     </div>
                 </div>
